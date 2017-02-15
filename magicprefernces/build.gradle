@@ -2,7 +2,10 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: "com.jfrog.bintray"
 
-version = "0.0.1"
+version = "0.0.3"
+group = "lt.minvib"
+def libraryArtifactId = 'magicprefernces'
+
 
 android {
     compileSdkVersion 25
@@ -36,12 +39,19 @@ dependencies {
 
 def siteUrl = 'https://github.com/kirvis250/magic-preferences'
 def gitUrl = 'https://github.com/kirvis250/magic-preferences.git'
-group = "lt.minvib"
+def gitIssues = 'https://github.com/kirvis250/magic-preferences/issues'
+
+
+
 
 install {
     repositories.mavenInstaller {
         // This generates POM.xml with proper parameters
+
+
         pom {
+            artifactId = libraryArtifactId
+
             project {
                 packaging 'aar'
 
@@ -76,6 +86,7 @@ install {
 
 task sourcesJar(type: Jar) {
     from android.sourceSets.main.java.srcDirs
+    baseName = libraryArtifactId
     classifier = 'sources'
 }
 
@@ -86,6 +97,7 @@ task javadoc(type: Javadoc) {
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'
+    baseName = libraryArtifactId
     from javadoc.destinationDir
 }
 artifacts {
@@ -103,9 +115,11 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = "maven"
+        repo = "android"
         // it is the name that appears in bintray when logged
         name = "lt.minvib:magicprefernces"
+
+        issueTrackerUrl = gitIssues
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
