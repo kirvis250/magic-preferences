@@ -1,4 +1,4 @@
-package lt.minvib.magicpreferences;
+package lt.minvib.magicpreferencesExample;
 
 import org.junit.Test;
 

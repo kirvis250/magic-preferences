@@ -1,4 +1,4 @@
-package lt.minvib.magicpreferences.jsonpreference;
+package lt.minvib.magicpreferencesExample.jsonpreference;
 
 import org.json.JSONArray;
 import org.json.JSONException;

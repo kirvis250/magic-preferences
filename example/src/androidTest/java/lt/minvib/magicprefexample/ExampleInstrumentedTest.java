@@ -1,4 +1,4 @@
-package lt.minvib.magicpreferences;
+package lt.minvib.magicprefexample;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("lt.minvib.magic_preferences", appContext.getPackageName());
+        assertEquals("lt.minvib.magicprefexample", appContext.getPackageName());
     }
 }

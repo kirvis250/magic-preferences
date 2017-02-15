@@ -2,7 +2,6 @@ package lt.minvib.magicpreferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 
 /**
  * Created by Naudotojas on 2015-10-01.

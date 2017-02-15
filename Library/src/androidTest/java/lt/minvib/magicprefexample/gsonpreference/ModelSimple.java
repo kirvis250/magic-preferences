@@ -1,4 +1,4 @@
-package lt.minvib.magicpreferences.gsonpreference;
+package lt.minvib.magicpreferencesExample.gsonpreference;
 
 import com.google.gson.annotations.SerializedName;
 

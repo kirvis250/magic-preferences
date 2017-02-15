@@ -1,8 +1,12 @@
-package lt.minvib.magicpreferences;
+package lt.minvib.magicpreferencesExample;
 
 import android.test.InstrumentationTestCase;
 
-import org.junit.Test;
+import lt.minvib.magicpreferences.MagicBooleanPreference;
+import lt.minvib.magicpreferences.MagicFloatPreference;
+import lt.minvib.magicpreferences.MagicIntegerPreference;
+import lt.minvib.magicpreferences.MagicLongPreference;
+import lt.minvib.magicpreferences.MagicStringPreference;
 
 
 /**

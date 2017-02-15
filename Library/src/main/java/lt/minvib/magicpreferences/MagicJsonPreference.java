@@ -3,7 +3,6 @@ package lt.minvib.magicpreferences;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.annotation.NonNull;
-import android.util.Log;
 
 import org.json.JSONException;
 

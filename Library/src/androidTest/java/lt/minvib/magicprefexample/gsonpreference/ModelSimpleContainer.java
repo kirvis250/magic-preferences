@@ -1,15 +1,9 @@
-package lt.minvib.magicpreferences.gsonpreference;
+package lt.minvib.magicpreferencesExample.gsonpreference;
 
 import com.google.gson.annotations.SerializedName;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.List;
-
-import lt.minvib.magicpreferences.JSONPreference;
 
 /**
  * Created by minda on 2016-01-03.

@@ -1,21 +1,22 @@
-package lt.minvib.magicpreferences.gsonpreference;
+package lt.minvib.magicpreferencesExample.jsonpreference;
 
 import android.test.InstrumentationTestCase;
-import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
-import lt.minvib.magicpreferences.MagicGsonPreference;
+
+import lt.minvib.magicpreferences.MagicJsonPreference;
 
 /**
  * Created by minda on 2016-01-03.
  */
-public class TestGSONPreference extends InstrumentationTestCase {
+public class TestJsonPreference extends InstrumentationTestCase {
 
 
-    public void testGsonSimple(){
+    public void testJsonSimple(){
         ModelSimple simple = new ModelSimple(1, "one",1.1,1L,false);
 
-        MagicGsonPreference<ModelSimple> modelsimple = new MagicGsonPreference<>(null,"simple",null, ModelSimple.class);
+        MagicJsonPreference<ModelSimple> modelsimple = new MagicJsonPreference<>(null,"simple",null,new ModelSimple());
         modelsimple.set(getInstrumentation().getContext(),simple);
 
         ModelSimple simplefinal = modelsimple.get(getInstrumentation().getContext());
@@ -29,8 +30,7 @@ public class TestGSONPreference extends InstrumentationTestCase {
 
 
 
-
-    public void testGsonContainer(){
+    public void testJsonContainer(){
 
         List<ModelSimple> simpleList = new ArrayList<>();
         simpleList.add( new ModelSimple(0, "one",1.1,1L,false));
@@ -40,9 +40,9 @@ public class TestGSONPreference extends InstrumentationTestCase {
         simpleList.add( new ModelSimple(4, "one",1.1,1L,false));
         simpleList.add( new ModelSimple(5, "one",1.1,1L,false));
 
-       ModelSimpleContainer container = new ModelSimpleContainer(simpleList,"labas");
+        ModelSimpleContainer container = new ModelSimpleContainer(simpleList,"labas");
 
-        MagicGsonPreference<ModelSimpleContainer> modelsimple = new MagicGsonPreference<>(null,"simple",null, ModelSimpleContainer.class);
+        MagicJsonPreference<ModelSimpleContainer> modelsimple = new MagicJsonPreference<>(null,"simple",null,new ModelSimpleContainer());
         modelsimple.set(getInstrumentation().getContext(),container);
 
         ModelSimpleContainer simplefinal = modelsimple.get(getInstrumentation().getContext());
