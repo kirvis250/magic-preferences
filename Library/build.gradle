@@ -105,7 +105,7 @@ bintray {
     pkg {
         repo = "maven"
         // it is the name that appears in bintray when logged
-        name = "com.mikhaellopez:circularimageview" // TODO
+        name = "lt.minvib:magicprefernces"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
