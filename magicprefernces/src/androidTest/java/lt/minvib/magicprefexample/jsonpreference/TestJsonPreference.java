@@ -1,16 +1,18 @@
-package lt.minvib.magicpreferencesExample.jsonpreference;
+package lt.minvib.magicprefexample.jsonpreference;
 
-import android.test.InstrumentationTestCase;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import lt.minvib.magicpreferences.MagicJsonPreference;
 
+import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
+import static junit.framework.TestCase.assertEquals;
+
 /**
  * Created by minda on 2016-01-03.
  */
-public class TestJsonPreference extends InstrumentationTestCase {
+public class TestJsonPreference {
 
 
     public void testJsonSimple(){

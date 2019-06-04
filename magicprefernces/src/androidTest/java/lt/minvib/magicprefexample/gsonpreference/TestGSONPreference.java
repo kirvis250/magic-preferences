@@ -1,17 +1,21 @@
-package lt.minvib.magicpreferencesExample.gsonpreference;
+package lt.minvib.magicprefexample.gsonpreference;
 
-import android.test.InstrumentationTestCase;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 import lt.minvib.magicpreferences.MagicGsonPreference;
 
+import static androidx.test.platform.app.InstrumentationRegistry.getInstrumentation;
+import static junit.framework.TestCase.assertEquals;
+
 /**
  * Created by minda on 2016-01-03.
  */
-public class TestGSONPreference extends InstrumentationTestCase {
+public class TestGSONPreference {
 
 
+    @Test
     public void testGsonSimple(){
         ModelSimple simple = new ModelSimple(1, "one",1.1,1L,false);
 
@@ -29,7 +33,7 @@ public class TestGSONPreference extends InstrumentationTestCase {
 
 
 
-
+    @Test
     public void testGsonContainer(){
 
         List<ModelSimple> simpleList = new ArrayList<>();
