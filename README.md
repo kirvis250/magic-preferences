@@ -2,20 +2,7 @@
 Wrapper to help with shared preferences. It provide static variable access to single preferences.
 
 
-
-``` gradle
-repositories {
-    maven {
-        url "http://dl.bintray.com/kirvis250/android" 
-    } 
-}
-```
-
-``` gradle
-dependencies {
-  compile 'lt.minvib:magicprefernces:0.0.3'
-}
-```
+**Repository link currently unavailable since bintray is no more**
 
 ##Usage
 
